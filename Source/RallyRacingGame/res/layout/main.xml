@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="@drawable/cosmic"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="left"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:text="score"
+			android:id="@+id/scoreText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30px"
+			android:layout_marginRight="10px" />
+		<TextView
+			android:text="0000000000"
+			android:id="@+id/scoreNumText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="28px"
+			android:layout_marginRight="20px" />
+		<TextView
+			android:text="time "
+			android:id="@+id/timeText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="30px"
+			android:layout_marginRight="10px" />
+		<TextView
+			android:text="00000"
+			android:id="@+id/timeNumText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="28px"
+			android:layout_marginRight="10px" />
+		<ImageView
+			android:id="@+id/powerItemImageID"
+			android:layout_width="32px"
+			android:layout_height="32px" />
+	</LinearLayout>
+
+	<SurfaceView
+		android:id="@+id/mainSurfaceView"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="15px"
+		android:layout_width="384px"
+		android:layout_height="448px" />
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="left"
+		android:layout_marginTop="15px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+		    android:layout_marginLeft="20px"
+			android:layout_width="65px"
+			android:layout_height="65px"
+			android:layout_marginRight="10px" />
+		<ImageView
+			android:id="@+id/upImageID"
+			android:clickable="true"
+			android:src="@drawable/up_arrow"
+			android:layout_width="65px"
+			android:layout_height="65px"
+			android:layout_marginRight="10px" />
+		<ImageView
+			android:layout_width="65px"
+			android:layout_height="65px" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="left"
+		android:layout_marginTop="15px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+		    android:layout_marginLeft="20px"
+			android:id="@+id/leftImageID"
+			android:clickable="true"
+			android:src="@drawable/left_arrow"
+			android:layout_width="65px"
+			android:layout_height="65px"
+			android:layout_marginRight="10px" />
+		<ImageView
+			android:layout_width="65px"
+			android:layout_height="65px"
+			android:layout_marginRight="10px" />
+		<ImageView
+			android:id="@+id/rightImageID"
+			android:clickable="true"
+			android:src="@drawable/right_arrow"
+			android:layout_width="65px"
+			android:layout_height="65px" />
+		<Button
+			android:text="A"
+			android:id="@+id/button1"
+			android:layout_width="65px"
+			android:layout_height="65px"
+			android:textSize="32px"
+			android:onClick="onClickAbutton"
+			android:layout_marginLeft="150px" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:gravity="left"
+		android:layout_marginTop="15px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+		    android:layout_marginLeft="20px"
+			android:layout_width="65px"
+			android:layout_height="65px"
+			android:layout_marginRight="10px" />
+		<ImageView
+			android:id="@+id/downImageID"
+			android:clickable="true"
+			android:src="@drawable/down_arrow"
+			android:layout_width="65px"
+			android:layout_height="65px"
+			android:layout_marginRight="10px" />
+		<ImageView
+			android:layout_width="65px"
+			android:layout_height="65px" />
+	</LinearLayout>
+
+</LinearLayout>
